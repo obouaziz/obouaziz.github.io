@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Bluefish 2.2.7" />
+
+
+
+
+<title></title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="bootstrap-theme.min.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 64px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+
+.section h2 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h3 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h4 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h5 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h6 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+<!DOCTYPE html>
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Olivier Bouaziz</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="research.html"><font size="4">Publications</font></a>
+</li>
+<li>
+  <a href="software.html"><font size="4">Software</font></a>
+</li>
+<li>
+  <a href="supervision.html"><font size="4">Supervision</font></a>
+</li>
+<li>
+  <a href="talks.html"><font size="4">Talks - Slides</font></a>
+</li>
+<li>
+  <a href="teaching.html"><font size="4">Teaching</font></a>
+</li>
+<li>
+  <a href="LNCC.html"><font size="4">Project LNCC</font></a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+        <li>
+  <a target="_blank" rel="noopener noreferrer" href="mailto:olivier.bouaziz@parisdescartes.fr">
+    <span class="fa fa-envelope fa-2x"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="http://github.com/obouaziz">
+    <span class="fa fa-github fa-2x"></span>
+     
+  </a>
+</li>
+<li>
+  <img class="logo-img" src="rsz_2univparisbis.gif" position: absolute; top: 10px>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+
+</div>
+
+
+<p><link rel="stylesheet" href="styles.css" type="text/css"></p>
+<img src="photo.jpg" style="width:26%; border:10px solid; margin-right: 30px" align="left">
+<style>
+p.ex1 {
+  margin: 0px;
+}
+</style>
+<p class="ex1">
+<p>I am currently ‘’maître de conférences’’ (assistant professor) at the department <a href="https://iutparis-seine.u-paris.fr/metiers-de-la-data/bachelor-universitaire-de-technologie-stid/">SD</a> of the <a href=http://www.iut.parisdescartes.fr/>IUT de Paris - Rives de Seine</a>, <a href="https://www.parisdescartes.fr">Université Paris Cité</a>. I am a member of the laboratory <a href="http://map5.mi.parisdescartes.fr/">MAP5</a>.<br />
+My full CV is available in <a href="CV_Bouaziz.pdf">French</a> and in <a href="CV_Bouaziz_English.pdf">English</a>.</p>
+<p><strong>Contact informations :</strong></p>
+<ul>
+<li><p>MAP5 (bureau 733-O), Université Paris Cité, 45 rue des Saints-Pères, 75006 Paris.<br />
+Phone number: (+33) 01 76 53 03 79</p></li>
+<li>Département STID (bureau B4-16), IUT de Paris, 143 avenue de Versailles, 75016 Paris.<br />
+Phone number: (+33) 01 42 86 48 27</li>
+</ul>
+
+<p>email: <a target="_blank" rel="noopener noreferrer" href="mailto:olivier.bouaziz@parisdescartes.fr">olivier.bouaziz@parisdescartes.fr</a> or <a target="_blank" rel="noopener noreferrer" href="mailto:olivier.bouaziz@math.cnrs.fr">olivier.bouaziz@math.cnrs.fr</a></p>
+<p>The full version of my “Habilation à Diriger des Recherches” (HDR) is available <a href="HDR_Bouaziz.pdf">here</a>.</p>
+<!--<p>I am currently visiting the <a href="https://www.lpsm.paris">LPSM</a> since February 2019 until July 2019.</p>-->
+<ul>
+<li><p>Jan. 2020-Dec. 2022: I was the principal investigator for the grant project "New Gene-Environment Interaction Detection Method for Cancer Diseases". For more information visit the <a href="LNCC.html">website</a>. <br />
+The grant was funded by <a href="https://www.ligue-cancer.net/">LNCC</a> (140k euros). It is a methodological project in genetic epidemiology that is still ongoing. <br />
+Two Postdocs were financed by LNCC to work on this project, <a href="https://mariechion.github.io//">Marie Chion</a> and <a href="https://sites.google.com/site/diabatemodibo18/">Modibo Diabaté</a>. The two other members of the project are <a href="http://nuel.perso.math.cnrs.fr/">Grégory Nuel</a> and <a href="https://sites.google.com/site/vivianviallon/">Vivian Viallon</a>.<!--The Postdoc description is available <a href="Postdoc_LNCC.pdf">here</a>.</p></li>-->
+<!--<li><p>I am currently offering a Master 2 internship on the subject <a href="Quantile_reg_Internship.pdf">quantile regression for censored data - application to a meta analysis on ovarian cancer treatments</a>. This internship will be supervised by <a href="https://institut-curie.org/personne/aurelien-latouche">Aurélien Latouche</a> and myself.</p></li>-->
+<!--<li><p>I was part of the scientific organisation of the Missing Data and Survival Analysis workshop that took place in Angers, on the 30th, 31st of May and 1st of June 2022. See the 
+<a href="https://mdsa2022.sciencesconf.org/">MDSA website</a></p></li>-->
+</ul>
+<h3>
+Research topics
+</h3>
+<ul>
+<li>Survival analysis with an emphasis on:
+<ul>
+<li>
+Interval censored data
+</li>
+<li>
+Recurrent events data
+</li>
+<li>
+Competing events/multi-state models
+</li>
+<li>
+Cure models  
+<!---Modeling/detecting heterogeneity with frailty models/mixture models-->
+</li>
+<li>
+Pseudo-regression
+</li>
+<!---<li>-->
+<!---Cox, Aalen and single-index regression models-->
+<!---</li>-->
+</ul></li>
+<li>Regularisation methods: fused-Lasso, adaptive-ridge</li>
+<li>Machine learning: super learner, computational optimal transport, sum product networks.</li>
+</ul>
+<h3>
+Responsabilities
+</h3>
+<ul>
+  <li><p>2023 - 2024: Head of the Professional BUT for third year students, a work and study program (BUT3-EMS, en alternance), department <a href="https://iutparis-seine.u-paris.fr/metiers-de-la-data/bachelor-universitaire-de-technologie-stid/">SD (ex STID)</a>, <a href="http://www.iut.parisdescartes.fr">IUT de Paris - Rives de Seine</a>.</p></li>
+<li><p>2019 - 2023: Head of the Health Professional Bachelor for third year students, a work and study program (Licence Professionnelle Santé, en alternance), department <a href="http://www.iut.parisdescartes.fr/FILIERES/STID-Statistique-et-Info-Decisionnelle">STID</a>, <a href="http://www.iut.parisdescartes.fr">IUT de Paris - Rives de Seine</a>.</p></li>
+<li><p>2022: Member of the scientific organisation of the Missing Data and Survival Analysis workshop that took place in Angers, on the 30th, 31st of May and 1st of June 2022. See the 
+<a href="https://mdsa2022.sciencesconf.org/">MDSA website</a>.</p></li>
+<li><p>Since 2018: Associate editor of the <a href="https://www.degruyter.com/view/j/ijb">International Journal of Biostatistics</a>.</p></li>
+<li><p>2015-2019: Head of the second year students program (Directeur des études de deuxième année), department <a href="http://www.iut.parisdescartes.fr/FILIERES/STID-Statistique-et-Info-Decisionnelle">STID</a>, <a href="http://www.iut.parisdescartes.fr">IUT Paris Descartes</a>.</p></li>
+<li><p>2013-2020: Co-organizer of the <a href="https://map5.mi.parisdescartes.fr/evenements/seminaire-de-statistique/">MAP5 statistics seminar</a>, with <a href="https://math.unice.fr/~cbouveyr/">Charles Bouveyron</a> then with <a href="https://helios2.mi.parisdescartes.fr/~vperduca/index.html">Vittorio Perduca</a>.</p></li>
+</ul>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
