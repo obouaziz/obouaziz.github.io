@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Bluefish 2.2.7" />
+
+
+
+
+<title></title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="bootstrap-theme.min.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 64px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+
+.section h2 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h3 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h4 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h5 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h6 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+<!--DOCTYPE html-->
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Olivier Bouaziz</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="research.html"><font size="4">Publications</font></a>
+</li>
+<li>
+  <a href="software.html"><font size="4">Software</font></a>
+</li>
+<li>
+  <a href="supervision.html"><font size="4">Supervision</font></a>
+</li>
+<li>
+  <a href="talks.html"><font size="4">Talks - Slides</font></a>
+</li>
+<li>
+  <a href="teaching.html"><font size="4">Teaching</font></a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+        <li>
+  <a href="mailto:olivier.bouaziz@parisdescartes.fr">
+    <span class="fa fa-envelope fa-2x"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="http://github.com/obouaziz">
+    <span class="fa fa-github fa-2x"></span>
+     
+  </a>
+</li>
+<li>
+  <img class="logo-img" src="rsz_2univparisbis.gif" position: absolute; bottom: 100px>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+
+</div>
+
+
+<p><link rel="stylesheet" href="styles.css" type="text/css"> <!--
+<h3> Research topics </h3>
+
+- Survival analysis with an emphasis on:
+<ul>
+<li> Interval censored data </li>
+<li> Recurrent events data</li>
+<li> Competing events/multi-state models</li>
+<li> Modelling/detecting heterogeneity with frailty models/mixture models</li>
+<li> Cox, Aalen and single-index regression models</li>
+</ul>
+
+- Co-clustering using optimal transport methods--></p>
+<h3>
+Research publications
+</h3>
+<ol style="list-style-type: decimal">
+  <li><p>  <a href="https://hal.science/hal-04612431v1/document">Random survival forests for the analysis of recurrent
+events for right-censored data, with or without a terminal event</a>. J. Murris, O. Bouaziz, M. Jakubczak, S. Katsahian, A. Lavenu.<br /> 
+<strong>Submitted.</strong></p></li>
+  <li><p>  <a href="https://arxiv.org/pdf/2404.17211">Pseudo-Observations and Super Learner for the
+Estimation of the Restricted Mean Survival Time</a>. A. Cwiling, V. Perduca, O. Bouaziz.<br /> 
+<strong>Submitted.</strong></p></li>
+<li><p>  <a href="https://hal.science/hal-04143419v1/document">A Comprehensive Framework for Evaluating Time to Event Predictions using the Restricted Mean Survival Time</a>. A. Cwiling, V. Perduca, O. Bouaziz.<br /> 
+<strong>Submitted.</strong></p></li>
+  <li><p>  <a href="https://hal.science/hal-04358291v1/document">Pitfalls in Time-to-Event Analysis of Registry Data: A Tutorial based on Simulated and Real Cases</a>. M. Alligon, N. Mahlaoui, O. Bouaziz.<br /> 
+<strong>Frontiers in Epidemiology</strong>, in press.</p></li>
+  <li><p> Severe comorbidities in mild WAS/XLT require lifelong follow-up and indicate allogeneic stem cell transplantation. C. Mallebranche, C. Miot, M. Alligon, D. Moshous, B. Neven, V. Barlogis, V. Courteille, C. Picard, O. Bouaziz, Y. Delneste, A. Fischer, N. Mahlaoui, I. Pellier.<br /> 
+<strong>Submitted.</strong></p></li>
+<li><p>  <a href="Prediction_rec_events.pdf">Assessing model prediction performance for the expected cumulative number of recurrent events</a>. O. Bouaziz.<br />
+<a href="Supporting_Information_Prediction_Rec_Events.pdf">Supplementary Material</a><br /> 
+<strong>Lifetime Data Analysis, Volume 30, pages 262–289, 2024.</strong></p></li>
+<li><p>  <a href=main.pdf>A Review on the Adaptive-Ridge Algorithm with several extensions</a>. R. Abergel, O. Bouaziz, G. Nuel.<br /> 
+<strong>Statistics and Computing</strong>, in press.</p></li>
+<li><p><a href="https://arxiv.org/pdf/1808.01770.pdf">Spline Regression with Automatic Knot Selection</a>. V. Goepp, O. Bouaziz, G. Nuel.<br />
+<strong>Submitted</strong></p></li>
+<li><p><a href="https://hal.archives-ouvertes.fr/hal-03854803/document"> The robusTest package: two-sample tests revisited</a>. S. Ammous, O. Bouaziz, J. Dedecker, J. El Methni, M. Mellouk, F. Muri. <br /><strong>Submitted.</strong>
+</p></li>
+<li><p><a href="https://www.sciencedirect.com/science/article/pii/S016503272400137X?utm_campaign=STMJ_219742_AUTH_SERV_PA&utm_medium=email&utm_acid=75990837&SIS_ID=&dgcid=STMJ_219742_AUTH_SERV_PA&CMX_ID=&utm_in=DM442329&utm_source=AC_"> Lower risk of hospitalisation for depression following hospitalisation for COVID-19 versus for another reason</a>. P. A. Geoffroy, V. Decio, P. Pirard, O. Bouaziz, E. Corruble,  V. Kovess-Masfety, M. Lejoyeux, J. Messika, B. Pignon, V. Perduca, N. Regnault, S. Tebeka.<br />
+<strong>Journal of Affective Disorders</strong>, available online 14 January 2024.</p></li>
+<li><p> Is there a lower risk of hospitalization for self-harm after hospitalization for COVID-19? A French nationwide longitudinal study. P. Pirard, V. Decio, B. Pignon, O. Bouaziz, V. Perduca, V. Kovess-Masfety, E. Corruble, F. Chin, P. A. Geoffroy, Y. Le Strat, J. Messika, N. Regnault, S. Tebeka.<br />
+<strong>Submitted.</strong></p></li>
+<li><p>  <a href="https://hal.archives-ouvertes.fr/hal-03293786/document">Optimal transport-based machine learning to match specific expression patterns in omics data</a>. T. T. Y. Nguyen, W. Harchaoui, L. Mégret, C. Mendoza, O. Bouaziz, C. Neri, A. Chambaz.<br /> 
+<strong>Journal of the Royal Statistical Society Series C</strong>, March 2024.</p></li>
+<li><p> <a href="https://www.sciencedirect.com/science/article/abs/pii/S002252232301019X?CMX_ID=&SIS_ID=&dgcid=STMJ_AUTH_SERV_PUBLISHED&utm_acid=284267666&utm_campaign=STMJ_AUTH_SERV_PUBLISHED&utm_in=DM426533&utm_medium=email&utm_source=AC_">Can machine learning provide preoperative predictions of biological hemostasis after extracorporeal circulation for cardiac surgery?</a> V. Perduca, O. Bouaziz, K. Zannis, M. Beaussier, O. Untereiner.<br />
+<strong>The Journal of Thoracic and Cardiovascular Surgery</strong>, available online 4 November 2023.</p></li>
+<li><p>
+<a href="https://www.nature.com/articles/s41380-023-02207-8">The risk of hospitalization for psychotic disorders following hospitalization for COVID-19: a French nationwide longitudinal study</a>. 
+B. Pignon, V. Decio, P. Pirard, O. Bouaziz, E. Corruble, P. A. Geoffroy, V. Kovess-Masfety, M. Leboyer, C. Lemogne, J. Messika, V. Perduca, F. Schürhoff, N. Regnault, S. Tebeka.
+<br /> 
+<strong>Molecular Psychiatry </strong>, Volume 28, pages 3293–3304, 2023.</p></li>
+
+
+<li><p>  <a href="https://onlinelibrary.wiley.com/doi/epdf/10.1002/bimj.202200071">Fast approximations of pseudo-observations in the context of right-censoring and interval-censoring</a>. O. Bouaziz.<br /> 
+<a href="Supp_Material_Fast_Pseudo.pdf">Supplementary Material</a><br /> 
+<strong>Biometrical Journal</strong>, Volume 65, Issue 4, 2023.</p></li>
+<li><p>
+<a href="https://www.doi.org/10.1192/j.eurpsy.2022.2331">Hospitalization for COVID-19 is associated with a higher risk of subsequent hospitalization for psychiatric disorders: A French nationwide longitudinal study comparing hospitalizations for COVID-19 and for other reasons</a>. 
+V. Decio, P. Pirard, B. Pignon, O. Bouaziz, V. Perduca, F. Chin, Y. Le Strat, J. Messika, V. Kovess-Masfety, E. Corruble, N. Regnault, S. Tebeka.
+<br /> 
+<strong>European Psychiatry</strong>, Volume 65, Issue 1, 2022.</p></li>
+<li><p>
+<a href="https://pubmed.ncbi.nlm.nih.gov/36167031/">Allogeneic stem cell transplantation compared to conservative management in adults with inborn errors of immunity and life-threatening complications: an international retrospective matched pairs analysis</a>. 
+M. Cheminant, T. A. Fox, M. Alligon, O. Bouaziz, B. Neven, D. Moshous, S. Blanche, A. Guffroy, C. Fieschi, M.  Malphettes, N. Schleinitz, A. Perlat, J.-F. Viallard, N. Dhedin, F. Sarrot-Reynauld, I. Durieu, S. Humbert, F. Fouyssac, V. Barlogis, B. Carpenter, R. E. Hough, A. Laurence, A. Marçais, R. Chakraverty, O. Hermine, A. Fischer, S. O. Burns, N. Mahlaoui, E. C. Morris, F. Suarez.
+<br /> 
+<strong>Blood</strong>, Volume 141, Issue 1, 2022.</p></li>
+<li><p>  <a href="https://www.frontiersin.org/articles/10.3389/fnmol.2022.914830/full">Precision machine learning to understand micro-RNA regulation in neurodegenerative diseases</a>. L. Mégret, C. Mendoza, M. A. Lobo, E. Brouillet, T. T. Y. Nguyen, O. Bouaziz, A. Chambaz, C. Néri.<br /> 
+<strong>Frontiers in Molecular Neuroscience</strong>, 2022.</p></li>
+<li><p><a href="https://www.sciencedirect.com/science/article/abs/pii/S0048969722001887?via%3Dihub"> Influence of exposure assessment methods on associations between long-term exposure to outdoor fine particulate matter and risk of cancer in the French cohort GAZEL.</a>. 
+E. Lequy, [...], O. Bouaziz, [...], B. Jacquemin.
+<br /> 
+<strong>Science of the Total Environment</strong>, 2022</p></li>
+<li><p><a href="Bouaziz_Lauridsen_Nuel.pdf">Regression modelling of interval-censored data based on the adaptive-ridge procedure</a>. O. Bouaziz, E. Lauridsen, G. Nuel. <br />
+<a href="Supp_Material_BLN.pdf">Supplementary Material</a><br /> 
+<strong>Journal of Applied Statistics</strong>, Volume 49, Issue 13, 2022, Pages 3319-3343.<br/>
+<a href="https://www.tandfonline.com/doi/full/10.1080/02664763.2021.1944996">Journal link</a></p></li>
+<li><p><a href="ijb-2019-0003.pdf">Regularized bidimensional estimation of the hazard rate</a>. V. Goepp, G. Nuel, O. Bouaziz.<br /> <!-- Goepp_Nuel_Bouaziz.pdf-->
+<a href="Supp_Material_GNB.pdf">Supplementary Material</a><br /> 
+<strong>The International Journal of Biostatistics</strong>, Volume 18, vol. 18, no. 1, 2022, Pages 263-277.<br/>
+<a href="https://www.degruyter.com/document/doi/10.1515/ijb-2019-0003/html">Journal link</a></p></li>
+<li><p><a href="https://hal.archives-ouvertes.fr/hal-02859894/document">Gaussian Sum-Product Networks Learning in the Presence of Interval Censored Data</a>. P. Clavier, O. Bouaziz, G. Nuel.<br />
+<strong>Probabilistic Graphical Models (PGM),</strong> 2020.</p></li>
+<li><p><a href="https://www.ncbi.nlm.nih.gov/pubmed/31631495">Risk of ankylosis of 400 avulsed and replanted human teeth in relation to length of dry storage. A re-evaluation of a previous long-term clinical study</a>. E. Lauridsen, J. Andreasen, O. Bouaziz, L. Andersson.<br />
+<strong>Dental Traumatology,</strong> 2020 Apr, 36(2):108-116.</p></li>
+<li><p><a href="https://hal.archives-ouvertes.fr/hal-01766456/document">Nonparametric survival function estimation for data subject to interval censoring case 2</a>. O. Bouaziz, E. Brunel, F. Comte. <br /> 
+<strong>Journal of Nonparametric Statistics</strong>, Volume 31, Issue 4, 2019, Pages 952-987.</p></li>
+<li><p><a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0217983">Recurrent event survival analysis predicts future risk of hospitalization in patients with paroxysmal and persistent atrial fibrillation</a>. J. Schroder, O. Bouaziz, B. R. Agner, T. Martinussen, P. L. Madsen, D. Li, F. Nedaei, U. Dixen.<br />
+<strong>PLoS ONE</strong>, Volume 14, Month 6, 2019.</p></li>
+<li><p><a href="https://academic.oup.com/cid/article/66/6/930/4560780?guestAccessKey=1eecd097-fa82-4b86-be78-48eff7d4620e">Is placental malaria a long term risk factor for mild malaria attack in infancy? A Beninese observational cohort study</a>. O. Bouaziz, D. Courtin, G. Cottrell, J. Milet, G. Nuel, A. Garcia.<br />
+<strong>Clinical Infectious Diseases</strong>, Volume 66, Issue 6, 2018, Pages 930-935.</p></li>
+<li><p><a href="HeterogeneitySurv.pdf">A Change-Point Model for Detecting Heterogeneity in Ordered Survival Responses</a>. O. Bouaziz, G. Nuel.<br />
+<strong>Statistical Methods in Medical Research</strong>, Volume 27, Issue 12, 2018, Pages 3595-3611.<br />
+<a href="Supporting_Material.pdf">Supplementary Material</a></p></li>
+<li><p><a href="https://www.hindawi.com/journals/cmmm/2017/9193630/">Computing Individual Risks based on Family History in Genetic Disease in the Presence of Competing Risks</a>. G. Nuel, A. Lefebvre, O. Bouaziz.<br />
+<strong>Computational and Mathematical Methods in Medicine</strong>, Volume 2017, 2017.</p></li>
+<li><p><a href="https://www.scirp.org/Journal/PaperInformation.aspx?PaperID=75021">L0 regularization for the estimation of piecewise constant hazard rates in survival analysis</a>. O. Bouaziz, G. Nuel.<br />
+<strong>Applied Mathematics</strong>, Volume 8, Number 3, 2017, Pages 377-394.</p></li>
+<li><p><a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0161654">Broad-Spectrum Antibiotic Treatment and Subsequent Childhood Type 1 Diabetes: A Nationwide Danish Cohort Study</a>. T. Clausen, T. Bergholt, O. Bouaziz, M. Arpi, F. Eriksson, S. Rasmussen, N. Keiding, E. Løkkegaard.<br />
+<strong>PLoS ONE</strong>, Volume 11, Month 8, 2016.</p></li>
+<li><p><a href="https://hal.archives-ouvertes.fr/file/index/docid/1053266/filename/BouazizGuilloux_Main.pdf">A penalized algorithm for event-specific rate models for recurrent events</a>. O. Bouaziz, A. Guilloux.<br />
+<strong>Biostatistics</strong>, Volume 16, Issue 2, 2015, Pages 281-294.<br />
+<a href="Supplement_Mat.pdf">Supplementary Material</a></p></li>
+<li><p><a href="BouazizGeffrayLopez.pdf">Semiparametric inference for the recurrent event process by means of a single-index model</a>. O. Bouaziz, S. Geffray, O. Lopez.<br />
+<strong>Statistics</strong>, Volume 49, Issue 2, 2015, Pages 361-385.<br />
+<a href="BouazizGeffrayLopezSup.pdf">Supplementary material</a></p></li>
+<li><p><a href="BouazizComteGuilloux.pdf">Nonparametric estimation of the intensity function of a recurrent event process</a>. O. Bouaziz, F. Comte, A. Guilloux.<br />
+<strong>Statistica Sinica</strong>, Volume 23, Number 2, 2013, Pages 635-665.</p></li>
+<li><p><a href="https://arxiv.org/pdf/0807.3899.pdf">Conditional density estimation in a censored single-index regression model</a>. O. Bouaziz, O. Lopez.<br />
+<strong>Bernoulli</strong>, Volume 16, Issue 2, 2010, Pages 514-542.</p></li>
+</ol>
+<ul style="list-style-type:none">
+<li>
+<a href="HDR_Bouaziz.pdf">Contributions théoriques et appliquées à l’analyse de survie</a>, HDR defended on November 2018, 29th.
+</li>
+<li>
+<a href="These.pdf">Utilisation de modèles à direction révélatrice unique pour les modèles de durée</a>, PhD thesis defended on November 2009, 24th.
+</li>
+</ul>
+
+<h3>
+Teaching manuscript 
+</h3>
+
+<ol style="list-style-type: decimal">
+<!-- <li><p><a href="https://hal.archives-ouvertes.fr/hal-02103068/document">Sur quelques tests usuels en statistique bivariée</a>. S. Ammous, O. Bouaziz, J. Dedecker, J. El Methni, M. Mellouk, F. Muri. <br /> -->
+<!--<strong>Submitted</strong>-->
+<li><p><a href="Ignoring_Censoring.pdf">The effect of ignoring censoring in survival analysis: theoretical and practical considerations</a>. O. Bouaziz. <br /> 
+</p></li><!--<strong>Submitted</strong>-->
+
+</ol>
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

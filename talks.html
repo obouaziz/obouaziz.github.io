@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Bluefish 2.2.7" />
+
+
+
+
+<title></title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="bootstrap-theme.min.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 64px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+
+.section h2 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h3 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h4 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h5 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h6 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+<!--DOCTYPE html-->
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Olivier Bouaziz</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="research.html"><font size="4">Publications</font></a>
+</li>
+<li>
+  <a href="software.html"><font size="4">Software</font></a>
+</li>
+<li>
+  <a href="supervision.html"><font size="4">Supervision</font></a>
+</li>
+<li>
+  <a href="talks.html"><font size="4">Talks - Slides</font></a>
+</li>
+<li>
+  <a href="teaching.html"><font size="4">Teaching</font></a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+        <li>
+  <a href="mailto:olivier.bouaziz@parisdescartes.fr">
+    <span class="fa fa-envelope fa-2x"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="http://github.com/obouaziz">
+    <span class="fa fa-github fa-2x"></span>
+     
+  </a>
+</li>
+<li>
+  <img class="logo-img" src="rsz_2univparisbis.gif" position: absolute; bottom: 100px>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+
+</div>
+
+
+<p><link rel="stylesheet" href="styles.css" type="text/css"></p>
+<h3>
+Slides
+</h3>
+<ul>
+  <li>A comprehensive framework for time to event predictions with right censored data: <a href="Seminaire_Lille.pdf">slides</a></li>
+  <li>Optimal transport-based machine learning to match specific expression patterns in omics data: <a href="Bouaziz_HCERES.pdf">slides</a></li>
+  <li>Study of the adaptive-ridge algorithm with applications to time to event data: <a href="Seminaire_IHP.pdf">slides</a></li>
+  <li>Fast approximations of pseudo-observations in the context of right-censoring and interval-censoring: <a href="Fast_Pseudo_Obs.pdf">slides</a></li>
+<li>Defense of my Habilitation à Diriger des Recherches: <a href="HDR_Soutenance.pdf">slides</a></li>
+<li>The adaptive-ridge procedure in survival analysis: <a href="AR_Surv.pdf">slides</a> and <a href="Poster_IC_Surv.pdf">poster</a></li>
+<li>Detection and modelization of heterogeneity in survival analysis: <a href="Hetero_surv.pdf">slides</a></li>
+<li>Analysis of recurrent event data: <a href="Rec_Ev_AF.pdf">slides</a></li>
+<li>Penalized event-specific rate models for recurrent events data: <a href="EvSpe_RecEv.pdf">slides</a> and <a href="Poster_EvSpe_RecEv.pdf">poster</a></li>
+<li>Single Index Models for recurrent event data: <a href="SIM_Rec.pdf">slides</a></li>
+</ul>
+<h3>
+Recent talks
+</h3>
+<ul>
+  <li>Séminaire de Probabilités et Statistique au laboratoire Paul Painlevé (Lille), March 2024.</li>
+  <li>Séminaire du SAMM, Université Paris 1 Panthéon Sorbonne, October 2023.</li>
+  <li>Séminaire parisien de statistique de l'institut Henri Poincaré, June 2023.</li>
+  <li>Séminaire du laboratoire de mathématiques de Reims, May 2023.</li>
+  <li>The <a href="https://www.ibc2022.org/home">International Biometrics Conference</a>, Riga (Latvia), July 2022.</li>
+    <li>Séminaire de Statistique, MAP5 (Université Paris Cité), June 2022.</li>
+  <li>Séminaire de Probabilités et Statistique, LAREMA (Université d'Angers), March 2021.</li>
+  <li>Seminar at the Department of Mathematics and Computer Science (University of Southern Denmark, Odense), March 2021.</li>
+<li>Séminaire du laboratoire Jean Kuntzmann - Données et Aléatoire : Théorie et Applications (Université Grenoble Alpes), February 2020.</li>
+<li>Séminaire de probabilités et statistique du laboratoire JA Dieudonné (Université Côte d'Azur), January 2020.</li>
+<li>Séminaire du CépiDc (INSERM), June 2019.</li>
+<li>Séminaire du laboratoire ERIC (Lyon 1 et Lyon 2), March 2019.</li>
+<li>Séminaire de statistiques à l'AgroParisTech, January 2019.</li>
+<li>Séminaire de probabilité et statistiques au laboratoire Paul Painlevé (Lille), January 2019.</li>
+<li>Séminaire de mathématiques appliquées au laboratoire Jean-Leray (Nantes), November 2018.</li>
+<li>The <a href="http://2018.biometricconference.org/">International Biometrics Conference</a>, Barcelone (Spain), July 2018.</li>
+<li>The <a href="https://iwap2018.com">International Workshop of Applied Probability</a>, Budapest (Hungary), June 2018.</li>
+<li>Séminaire de statistique du LPSM (Paris 6 et 7), March 2018.</li>
+<li><a href="http://cmstatistics.org/EcoSta2017">1st International Conference on Econometrics and Statistics</a>, Hong-Kong, June 2017.</li>
+<li><a href="http://archive.stat.uconn.edu/lida17/">2017 Conference on Lifetime Data Science</a>, Connecticut (USA), May 2017.</li>
+</ul>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

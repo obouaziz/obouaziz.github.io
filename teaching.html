@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Bluefish 2.2.7" />
+
+
+
+
+<title></title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="bootstrap-theme.min.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 64px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+
+.section h2 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h3 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h4 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h5 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h6 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+<!DOCTYPE html>
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Olivier Bouaziz</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="research.html"><font size="4">Publications</font></a>
+</li>
+<li>
+  <a href="software.html"><font size="4">Software</font></a>
+</li>
+<li>
+  <a href="supervision.html"><font size="4">Supervision</font></a>
+</li>
+<li>
+  <a href="talks.html"><font size="4">Talks - Slides</font></a>
+</li>
+<li>
+  <a href="teaching.html"><font size="4">Teaching</font></a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+        <li>
+  <a href="mailto:olivier.bouaziz@parisdescartes.fr">
+    <span class="fa fa-envelope fa-2x"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="http://github.com/obouaziz">
+    <span class="fa fa-github fa-2x"></span>
+     
+  </a>
+</li>
+<li>
+  <img class="logo-img" src="rsz_2univparisbis.gif" position: absolute; bottom: 100px>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+
+</div>
+
+
+<p><link rel="stylesheet" href="styles.css" type="text/css"></p>
+<p>I teach 192 hours a year at the department <a href="https://iutparis-seine.u-paris.fr/metiers-de-la-data/bachelor-universitaire-de-technologie-stid/">SD (ex STID)</a> of the <a href=http://www.iut.parisdescartes.fr>IUT de Paris - Rives de Seine</a>, <a href="https://www.parisdescartes.fr">Université de Paris</a>. Since September 2023, I am head of the <strong> Professional BUT for third year students</strong>, a work and study program (BUT3-EMS, en alternance).  </p>
+<p>From September 2019 until September 2023, I was <strong>responsable de la Licence Professionnelle Santé</strong> (head of the profesionnal Licence, for third year students) in charge of 15 students on average. From September 2015 until September 2019, I was <strong>directeur des études de deuxième année</strong> (head of the second year students) in charge of 60 students on average. <br />
+Below are some of the courses I have been teaching so far.</p>
+<h3>
+Classification
+</h3>
+<h5>
+Master 2 Mathématiques et Applications, parcours MMA, UFR Math Info, Université de Paris. TP en R
+</h5>
+<ul>
+<li>Classifieur de Bayes</li>
+<li>Estimateur des k-plus proches voisins</li>
+<li>Modèles de mélange</li>
+<li>Régression logistique</li>
+<li>Arbres de décision, bagging, forêts aléatoires </li>
+<li>Support Vector Machine</li>
+</ul>
+<p> L'examen aura lieu le <strong>lundi 11 décembre</strong> ! </p>
+
+<p>
+  <!--<a href="Breast.RData"> Données Breast.RData pour l'exam <span class="fa fa-file-pdf-o"></span></a><br />--> <a href="Intro.pdf"> Chapitre 1 - Introduction <span class="fa fa-file-pdf-o"></span></a>  - <a href="Preuve_Chap1_Deviations.pdf"> Complément <span class="fa fa-file-pdf-o"></span></a> - <a href="Melange_Gaussien_Estimation_Regle.pdf"> Chapitre 2 - Estimation de la règle de classement <span class="fa fa-file-pdf-o"></span></a> - <a href="Illust_Melange_Gaussien.pdf"> Chapitre 2 - Illustrations <span class="fa fa-file-pdf-o"></span></a> - <a href="Cours_SVM.pdf"> Cours SVM <span class="fa fa-file-pdf-o"></span></a> <!-- - <a href="Cours_TD_Cart.pdf"> Cours/TD CART <span class="fa fa-file-pdf-o"></span></a>--><br /> <a href="td1_classif.pdf">TD 1 <span class="fa fa-file-pdf-o"></span></a> - <a href="td1_Correction_Exo3.pdf">Corrigé exo 3 TD 1 <span class="fa fa-file-pdf-o"></span></a> - <a href="Exo_Sup.pdf"> Exercice supplémentaire <span class="fa fa-file-pdf-o"></span></a> <!--- --> <br /> <a href="tp1_classif.pdf"> TP 1 <span class="fa fa-file-pdf-o"></span></a> - <a href="TP1_Corrige_Classif.R"> Corrigé du TP 1 <span class="fa fa-file-pdf-o"></span></a>  - <a href="tp2_classif.pdf"> TP 2 <span class="fa fa-file-pdf-o"></span></a> - <a href="TP2_Etu.R"> Corrigé du TP 2 <span class="fa fa-file-pdf-o"></span></a> - <a href="TP3_classif.pdf"> TP 3 <span class="fa fa-file-pdf-o"></span></a> - <a href="TP3_Etu.R"> Corrigé du TP 3 <span class="fa fa-file-pdf-o"></span></a> - <a href="TP4_classif.pdf"> TP 4 <span class="fa fa-file-pdf-o"></span></a> - <a href="TP4.R"> Corrigé du TP 4 <span class="fa fa-file-pdf-o"></span></a> <a href="SVM_Etu.R"> Code SVM (illustration) <span class="fa fa-file-pdf-o"></span></a> - <a href="SVM_Diabetes.R"> Code SVM (diabetes) <span class="fa fa-file-pdf-o"></span></a>  <!-- - <a href="TP4_Methodes_Ensembles.pdf"> TP 4 <span class="fa fa-file-pdf-o"></span></a> - --> <br /> <a href="TP_Note.pdf"> TP noté <span class="fa fa-file-pdf-o"></span></a>  <!--- <br /> <a href="TP1_Corrige_Classif.R"> Correction du TP 1 <span class="fa fa-file-pdf-o"></span></a> -  <a href="Correction_TP2.R"> Correction du TP 2 <span class="fa fa-file-pdf-o"></span></a> -  <a href="Correction_TP3.R"> Correction du TP 3 <span class="fa fa-file-pdf-o"></span></a> -  <a href="TP4_Exos1_2.R"> Correction du TP 4 (exo 1 et 2) <span class="fa fa-file-pdf-o"></span></a>--> <br /><a href="diabetes.csv"> Données diabète <span class="fa fa-file-pdf-o"></span></a> - <a href="alcohol.xls"> Données alcool <span class="fa fa-file-pdf-o"></span></a> - <a href="1625Data.csv"> Données 1625 <span class="fa fa-file-pdf-o"></span></a> -  <a href="DataManag_1625.R"> Data management données 1625 <span class="fa fa-file-pdf-o"></span></a> - <a href="Breast.RData"> Données Breast.RData pour l'examen de 2022 <span class="fa fa-file-pdf-o"></span></a> <br /> <a href="Exam_2021.pdf"> Sujet exam 2021 <span class="fa fa-file-pdf-o"></span></a> - <a href="Exam_2022.pdf"> Sujet exam 2022 <span class="fa fa-file-pdf-o"></span></a> - <a href="flight_Exam.RData"> Données exam <span class="fa fa-file-pdf-o"></span></a> 
+</p>
+
+<h3>
+Analyse de survie
+</h3>
+<h5>
+Master 2 pro Ingénierie Mathématiques, UFR Math Info Paris Descartes en R et LP Santé STID. TP en R pour le M2 et en SAS pour la LP.
+</h5>
+<ul>
+<li>Estimateur de Kaplan-Meier</li>
+<li>Tests du log-rang, log-rang généralisé et stratifié</li>
+<li>Modèle de Cox</li>
+<li>Etude des résidus du modèle de Cox</li>
+</ul>
+<p><a href="IntroSurv.pdf"> chapitre 1 <span class="fa fa-file-pdf-o"></span></a> - <a href="KMSurv.pdf"> chapitre 2 <span class="fa fa-file-pdf-o"></span></a> - <a href="CoxSurv.pdf"> chapitre 3 <span class="fa fa-file-pdf-o"></span></a><br />
+<a href="TP1Surv.pdf"> TP1 <span class="fa fa-file-pdf-o"></span></a> - <a href="TP2Surv.pdf"> TP2 <span class="fa fa-file-pdf-o"></span></a> - <a href="TP3Surv.pdf"> TP3 <span class="fa fa-file-pdf-o"></span></a></p>
+
+<h3>
+Tests d’hypothèses pour l’analyse bivariée - FA - VCOD
+</h3>
+<h5>
+2ème années STID. TP en R
+</h5>
+<ul>
+<li>Introduction à la notion de tests (risques de première espèce, deuxième espèce, p-valeur, puissance de test)</li>
+<li>Tests à deux échantillons de Student</li>
+<li>Test du <span class="math inline">\(\chi^2\)</span> d’indépendance et d’homogénéité</li>
+<li>Tests de corrélation de Pearson et Spearman et tests corrigés asymptotiques de corrélation de Pearson et Spearman.</li>
+</ul>
+<p><a href="Chapitre1_VCOD.pdf"> chapitre 1 <span class="fa fa-file-pdf-o"></span></a> - <a href="Chapitre2_VCOD.pdf"> chapitre 2 <span class="fa fa-file-pdf-o"></span></a> - <a href="exoTestsComp.pdf"> TD <span class="fa fa-file-pdf-o"></span></a>- <a href="TP_VCOD.pdf"> TP <span class="fa fa-file-pdf-o"></span></a></p>
+
+<h3>
+Tests paramétriques
+</h3>
+<h5>
+2ème années STID. TP en R
+</h5>
+<ul>
+<li>Introduction à la notion de tests (risques de première espèce, deuxième espèce, p-valeur, puissance de test)</li>
+<li>Tests à un et deux échantillons de Student</li>
+<li>Tests de la variance de Fisher, test corrigé asymptotique de la variance</li>
+<li>Test du <span class="math inline">\(\chi^2\)</span> d’indépendance et d’homogénéité</li>
+<li>Tests de corrélation de Pearson et Spearman et tests corrigés asymptotiques de corrélation de Pearson et Spearman.</li>
+</ul>
+<p><a href="Chap1Tests.pdf"> chapitre 1 <span class="fa fa-file-pdf-o"></span></a> - <a href="Chap2Tests.pdf"> chapitre 2 <span class="fa fa-file-pdf-o"></span></a> - <a href="Chap3Tests.pdf"> chapitre 3 <span class="fa fa-file-pdf-o"></span></a> - <a href="Chap4Tests.pdf"> chapitre 4 <span class="fa fa-file-pdf-o"></span></a> - <a href="Chap5Tests.pdf"> chapitre 5 <span class="fa fa-file-pdf-o"></span></a><br />
+<a href="TD1Tests.pdf"> TD1 <span class="fa fa-file-pdf-o"></span></a> - <a href="TD2Tests.pdf"> TD2 <span class="fa fa-file-pdf-o"></span></a> - <a href="TP1Tests.pdf"> TP1 <span class="fa fa-file-pdf-o"></span></a> - <a href="TP2Tests.pdf"> TP2 <span class="fa fa-file-pdf-o"></span></a></p>
+<h3>
+Tests non-paramétriques
+</h3>
+<h5>
+2ème années STID. TP en R
+</h5>
+<ul>
+<li>Test du <span class="math inline">\(\chi^2\)</span> d’adéquation à une loi donnée ou famille de lois</li>
+<li>Tests de Kolmogorov-Smirnov d’adéquation et de comparaison</li>
+<li>Tests Wilcoxon/Mann-Whitney</li>
+<li>Tests du signe et signe et rangs pour échantillons appariés</li>
+</ul>
+<h3>
+Modèle linéaire et ANOVA
+</h3>
+<h5>
+2ème année STID en alternance (modèle linéaire) et LP santé STID (modèle linéaire + ANOVA). TP en R
+</h5>
+<ul>
+<li>ANOVA à un facteur</li>
+<li>Modèle de régression linéaire simple</li>
+<li>Modèle de régression linéaire multiple</li>
+<li>Etude des résidus</li>
+<li>Méthodes de sélection de variables (critères stepwise, AIC, BIC)</li>
+</ul>
+<h3>
+Estimation
+</h3>
+<h5>
+Année spéciale STID
+</h5>
+<ul>
+<li>Notion d’estimateur sans biais, de variance minimale</li>
+<li>Méthode des moments</li>
+<li>Maximum de vraisemblance</li>
+<li>Intervalles de confiance</li>
+</ul>
+<h3>
+Statistiques descriptives
+</h3>
+<h5>
+1ère année STID et Lpro Santé STID. TP en R et SPSS
+</h5>
+<ul>
+<li>Indicateurs statistiques (moyenne, quantiles, écart-type)</li>
+<li>Fonction de répartition</li>
+<li>Histogramme</li>
+</ul>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
