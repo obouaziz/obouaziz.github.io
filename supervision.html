@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Bluefish 2.2.7" />
+
+
+
+
+<title></title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="bootstrap-theme.min.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 64px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+
+.section h2 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h3 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h4 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h5 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h6 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+<!DOCTYPE html>
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Olivier Bouaziz</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="research.html"><font size="4">Publications</font></a>
+</li>
+<li>
+  <a href="software.html"><font size="4">Software</font></a>
+</li>
+<li>
+  <a href="supervision.html"><font size="4">Supervision</font></a>
+</li>
+<li>
+  <a href="talks.html"><font size="4">Talks - Slides</font></a>
+</li>
+<li>
+  <a href="teaching.html"><font size="4">Teaching</font></a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+        <li>
+  <a href="mailto:olivier.bouaziz@parisdescartes.fr">
+    <span class="fa fa-envelope fa-2x"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="http://github.com//obouaziz">
+    <span class="fa fa-github fa-2x"></span>
+     
+  </a>
+</li>
+<li>
+  <img class="logo-img" src="rsz_2univparisbis.gif" position: absolute; bottom: 100px>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+
+</div>
+
+
+<p><link rel="stylesheet" href="styles.css" type="text/css"></p>
+<h3>
+Postdoc student
+</h3>
+<ul>
+  <li><p>From October 2021 until October 2022 I supervised the postdoc of <a href="https://mariechion.github.io//">Marie Chion</a> on the development on new methods for gene-environment detection. This postdoc was funded by <a href="https://www.ligue-cancer.net/">LNCC</a>.</p></li>
+<li><p>From September 2020 until August 2021 I supervised the postdoc of <a href="https://sites.google.com/site/diabatemodibo18/">Modibo Diabaté</a> on the development on new methods for gene-environment detection. This postdoc was funded by <a href="https://www.ligue-cancer.net/">LNCC</a>.</p></li>
+</ul>
+<h3>
+PhD students
+</h3>
+<ul>
+    <li><p>From October 2023  I will supervise the PhD thesis of Beatriz Farah Nores Goncalves, a former Master 2 student from ENSAE, on the subject “Designing clinical trials based on quantiles with right-censored data”. This is a joint supervision with <a href="https://scholar.google.fr/citations?user=mcAjtF0AAAAJ&hl=fr">Aurélien Latouche</a> (Professeur at CNAM and Institut Curie). The topic of the PhD thesis can be found <a href="projet_these_Beatriz.pdf">here</a>. The thesis is funded by the ED de Santé Publique Université Paris Saclay.</p></li>
+  <li><p>Since October 2021 I am supervising the PhD thesis of Ariane Cwiling on “Machine Learning for Survival Data Prediction with applications to Primary Immunodeficiencies data”. This is a joint supervision with <a href="https://helios2.mi.parisdescartes.fr/~vperduca/index.html">Vittorio Perduca</a> (Maître de conférences at MAP5).</p></li>
+<li><p>Since October 2018 I am supervising the PhD thesis of <a href="http://helios.mi.parisdescartes.fr/~tnguye/">Thi Thanh Yen Nguyen</a> on “Mathematical, data-driven modeling of the dynamics of brain vulnerability and senescence in neurodegenerative diseases”. This is a joint supervision with <a href="http://helios.mi.parisdescartes.fr/~chambaz/">Antoine Chambaz</a> (Professor at MAP5) and <a href="http://www.ibps.upmc.fr/en/ibps/directory/828-Christian-Neri">Christian Neri</a> (INSERM Research Director at IBPC).</p></li>
+<li><p>From October 2016 until September 2019 I supervised the PhD thesis of <a href="https://goepp.github.io">Vivien Goepp</a> on “An Iterative Regularized Method for Segmentation with Applications to Statistics”. This was a joint supervision with <a href="http://nuel.perso.math.cnrs.fr/">Grégory Nuel</a> (CNRS Research Director at LPSM).</p></li>
+</ul>
+
+<h3>
+Master students
+</h3>
+<ul>
+  <li><p>From March 2023 until October 2023  I supervise the Internship of Beatriz Farah Nores Goncalves, a Master 2 student from ENSAE, on the subject “Designing clinical trials based on quantiles with right-censored data”. This is a joint supervision with <a href="https://scholar.google.fr/citations?user=mcAjtF0AAAAJ&hl=fr">Aurélien Latouche</a> (Professeur at CNAM and Institut Curie). The topic of the internship can be found <a href="Survival_Percentiles.pdf">here</a>.</p></li>
+  <li><p> From April 2021 until October 2021 I supervised the Internship of Ariane Cwiling, a Master 2 student from Dauphine university, on the subject “Machine Learning for Survival Data Prediction”. This was a joint supervision with <a href="https://helios2.mi.parisdescartes.fr/~vperduca/index.html">Vittorio Perduca</a> (Maître de conférences at MAP5).</p></li>
+  <!--until October 2021 I supervised the Internship of Ariane Cwiling, a Master 2 student from Dauphine university, on the subject “Machine Learning for Survival Data Prediction”. This was a joint supervision with <a href="https://helios2.mi.parisdescartes.fr/~vperduca/index.html">Vittorio Perduca</a> (Maître de conférences at MAP5). The topic of the internship can be found <a href="ML_survival_internship.pdf">here</a>.</p></li>-->
+<li><p>From September 2019 until March 2020 I supervised the Internship of Pierre Clavier on “Sum-Product Networks for time to event data”. This was a joint supervision with <a href="http://nuel.perso.math.cnrs.fr/">Grégory Nuel</a> (CNRS Research Director at LPSM).</p></li>
+</ul>
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

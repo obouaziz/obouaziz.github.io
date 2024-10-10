@@ -1,0 +1,13 @@
+/* Whole document: */
+body{
+  font-size: 11pt;
+  text-align: justify;
+  padding-top: 84px;
+  padding-bottom: 10px;
+}
+
+.logo-img{
+    position: relative;
+    left: 10px;
+    top: 15px;
+}
