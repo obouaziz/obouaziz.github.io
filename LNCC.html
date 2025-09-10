@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Olivier Bouaziz" >
+
+  <title>Project LNCC</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <!--<link href="css/scrolling-nav.css" rel="stylesheet">-->
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">-->
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Project in genetic epidemiology - La Ligue Nationale Contre le Cancer (LNCC)</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">Description</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#Participants">Participants</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <!--<div class="container">
+      <a class="navbar-brand" href="#">Project in genetic epidemiology - La Ligue Nationale Contre le Cancer (LNCC)</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Participants">Participants</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>-->
+
+  <!-- Page Content -->
+  <section id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h1 class="mt-5">A new method for the detection of gene-environment interactions in cancer studies</h1>
+       
+      
+        <p class="lead">The grant is funded by la <a href="https://www.ligue-cancer.net/">Ligue Nationale Contre le Cancer</a></p>
+        <figure class="figure">
+  <img src="Principal_Curve.jpg" class="figure-img img-fluid rounded" alt="..."  style="width: 400px">
+  <figcaption class="figure-caption">Principal curve based on the three principal components.</figcaption>
+</figure>
+         </div>
+      <div class="col-lg-12 text-justify">
+        
+        
+        <p>In recent years, the detection of heterogeneity in epidemiology has attracted increasing interest.
+      One of the main reasons comes from the fact that taking into account heterogeneity in data analysis makes it
+      possible to gain statistical power. In addition, the detection of gene-environment interactions is of major interest in
+      epidemiology because it makes it possible to identify subgroups with high risks in the population. Although several
+      methods have already been proposed for this problem the detection of gene-environment effects remains difficult,
+      in particular because the causal effect is generally not directly observed (as for some treatments for example) and only
+      proxi variables (such as BMI for example) are accessible.</p>
+      
+      <p>The aim for this project is to develop a new statistical method for detecting gene-environment effects
+      associated with the occurrence of cancer. The proposed approach will detect groups of individuals characterized by their
+      environmental factors with different cancer risks.</p>
+      
+      <p>The method works as follows: each patient is positioned in a proximity space using multiple covariates (personal, clinical,
+      environmental, etc.). The approach then seeks to exploit the fact that two neighboring patients in this proximity space are
+      more likely to be exposed to latent (and therefore not necessarily observed) common factors. Then a Principal Component
+      Analysis (PCA) is applied to the proximity space and a smoothing curve, called "principal curve",
+      is applied to it. This makes it possible to project each individual on this curve and to obtain an order on the individuals.
+      Thus, close individuals on this curve will share similar exposure profiles. An example of a principal curve construction on
+      the three main components of a dataset is shown in the figure above.</p>
+      
+      <p>The grant (140k euros) is funded by the <a href="https://www.ligue-cancer.net/">French National League Against Cancer</a> (LNCC).</p>
+      
+      <h5 class="mt-5"> Objectives: </h5>
+      <p>
+      <ul>
+            <li> Developping the method by combining principal curves and the breakpoint methods from
+              <ul><li><a href="http://helios.mi.parisdescartes.fr/~obouaziz/HeterogeneitySurv.pdf">O. Bouaziz and G. Nuel (2018)</a> in the context of survival analysis.</li>
+              <li><a href="https://hal.archives-ouvertes.fr/hal-01795293/document">F. Alarcon and G. Nuel (2018)</a> in a logistic framework.</li></ul>
+            <li> Developing new test statistics for heterogeneity that will allow to test if gene-environment interactions exist in the data. </li>
+            <li> Investigating other approaches not based on principale curves such as <a href="https://www.hindawi.com/journals/mpe/2018/8451796/">minimun spanning tree</a>. </li>
+            <li> Applying the method to EPIC and UK Biobank datasets. </li>
+              </ul>
+        </p>
+      <h5 class="mt-5"> The data: </h5>
+      <p>
+      <ul>
+            <li> <a href="https://epic.iarc.fr/">EPIC</a> is a multi-centric European cohort with more than 500,000 individuals, recruited in the 1990s. This dataset contains 7,491 genotyped women
+            (3,831 cases of breast cancer and 3,623 controls) with different clinical and environmental information on patients:
+            for example, socio-economic status, height, weight, BMI, smoking status, alcohol consumption, eating habits (obtained from a questionnaire),
+            the status of menopause, the use of hormonal treatment (contraception or for menopause) etc. </li>
+            <li> <a href="https://www.ukbiobank.ac.uk/">UK Biobank</a> is a prospective cohort on 488,377 British individuals, all genotyped.
+            Recruitment took place from 2006 to 2010, for individuals aged 40 to 69 years. In May 2018, 79,000 cases of cancer
+            were diagnosed. The main ones are melanoma, breast cancer, uterine cancer, prostate cancer and colon cancer.
+            These data also contain several environmental and clinical information about these individuals: lifestyle,
+            biological measurements, biomarkers in the blood and urine, also images of the brain and heart as well as
+            repeated measures of physical activity. </li>
+              </ul>
+        </p>
+      </div>
+</div>
+      </div>
+  </section>
+  <section id="Participants">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-justify">
+        <h2 class="mt-5"> Participants </h2>
+        <ul>
+            <li><a href="http://helios.mi.parisdescartes.fr/~obouaziz/">Olivier Bouaziz</a>, maître de conférence, Université de Paris, laboratory MAP5. Principal investigator of the project.</li>
+            <li><a href="http://nuel.perso.math.cnrs.fr/">Grégory Nuel</a>, senior CNRS researcher of the Institute of Mathematics (INSMI), Laboratory of Probability, Statistics and Modeling (LPSM), Sorbonne Université.</li>
+            <li><a href="https://sites.google.com/site/vivianviallon/">Vivian Viallon</a>, maître de conférence, Université Claude Bernard, Lyon, currently on leave at Internation Agency for Research on Cancer (IARC).</li>
+            <li><a href="https://mariechion.github.io//">Marie Chion</a>, Postdoc, Université de Paris, laboratory MAP5. Marie has started her Postdoc in October 2021 and she will work for this project until the end of September 2022.</li>
+            <li><a href="https://sites.google.com/site/diabatemodibo18/">Modibo Diabaté</a>, now researcher at ISEN Yncréa, Université Grenobles Alpes, has worked on this project as a Postdoc from October 2020 until August 2021.</li>
+            </ul>
+          <!-- We are now seeking a new postdoc for one year, starting from September 2021. A description of the job that will be performed during the postdoc is available <a href="Postdoc_LNCC.pdf">here</a>. If you want to apply, please write to <a target="_blank" rel="noopener noreferrer" href="mailto:olivier.bouaziz@parisdescartes.fr">Olivier Bouaziz</a>.-->
+          
+        </div>
+      </div>
+    </div>
+      </section>
+  <!--<section id="postdoc">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-justify">
+       <!-- <h2 class="mt-5"> Call for a post-doc </h2>
+        We are looking for a two years post-doc to work on this project. The post-doc can start at any time from January 2020 until September 2020 and will finish
+        in September 2022 at the latest. The applicant should have strong computational skills, typically he/she should be familiar with the
+        EM algorithm, constrained Hidden Markov Models and time to event analysis. The method will be implemented preferably using the R software.
+        It will be applied to the EPIC and UK Biobank cohorts described above. More information is available <a href="Postdoc_LNCC.pdf">here</a>.
+        </div>
+      </div>
+    </div>
+      </section>-->
+  <section id="">
+    <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-justify">
+    <p> </p>
+    </div>
+      </div>
+    </div>
+    <p> </p>
+    </section>
+  <section id="">
+        <div class="col-lg-12 text-center">
+        <div class="row justify-content-md-center">
+        <div class="col-md-offset-2">
+      <figure class="figure">
+  <img src="UnivParis.jpg" class="figure-img img-fluid rounded" alt="..."  style="width: 170px; padding-right: 10px;">
+</figure>
+      </div>
+      <div class="col-md-offset-2">
+        <figure class="figure">
+  <img src="LNCC_Pic.jpg" class="figure-img img-fluid rounded" alt="..."  style="width: 150px; height: 150px; padding-top: 10px">
+</figure>
+        </div>
+      <div class="col-md-auto">
+                
+    </div>
+      <div class="col-md-0.5">
+      <figure class="figure">
+  <img src="IARC.jpg" class="figure-img img-fluid rounded" alt="..."  style="width: 140px; padding-right: 10px; padding-top: 20px"">
+</figure>
+      </div>
+      <div class="col-md-auto">
+      
+    </div>
+      <div class="col-md-0.5">
+      <figure class="figure">
+  <img src="SorbonneUniv.png" class="figure-img img-fluid rounded" alt="..."  style="width: 300px; padding-right: 10px; padding-top: 20px"">
+</figure>
+      </div>
+      </div>
+        </section>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.slim.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
